@@ -10,7 +10,7 @@ To execute the analysis, from the project folder you can run
 
 ``` bash
 docker build -t final .
-docker run -v ~/Downloads/final_project/output:/project/output final
+docker run -v ~/Downloads/final_project-main/output:/project/output final
 ```
 
 Then you can find a `report.html` under the output folder. Note that you may need to change the `~/Downloads/final_project/output`, and this depends on where you store this downloaded folder.
