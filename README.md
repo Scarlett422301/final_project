@@ -1,6 +1,6 @@
 ## My project
 
-For my project, I will analyze the `CA_ED_INFO550` data.
+For my project, I will analyze the `CA_ED_INFO550` data. This repository contains the docker file to build the docker image, and origingal data, R, Rmd and make file to generate the report.
 
 ## Execute the analysis
 
@@ -12,7 +12,7 @@ To execute the analysis, you need to:
 docker pull jran2/final
 ```
 
-2. build the image and retrieve the plot
+2. build the image and retrieve the report
 
 First, let's make a directory to store the result, and this folder will be in your root directory
 
