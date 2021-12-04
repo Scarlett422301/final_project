@@ -2,25 +2,29 @@
 
 For my project, I will analyze the `CA_ED_INFO550` data.
 
-To analyze the data you will need to download this folder. 
-
 ## Execute the analysis
 
-To execute the analysis, from the project folder you can run:
+To execute the analysis, you need to:
 
-1. to build the container
-
-``` bash
-docker build -t final .
-```
-
-2. to retrieve the report from the container
+1. pull the image from the docker hub
 
 ``` bash
-docker run -v ~/Downloads/final_project-main/output:/project/output final
+docker pull jran2/final
 ```
-Note that you may need to change the `~/Downloads/final_project-main/output`, and this depends on where you store this downloaded folder.
+
+2. build the image and retrieve the plot
+
+First, let's make a directory to store the result, and this folder will be in your root directory
+
+```bash
+mkdir ~/docker_output
+```
+
+Next, run
+
+``` bash
+docker run -v ~/docker_output:/project/output jran2/final
+```
 
 Then you can find a `report.html` under the output folder. 
 
-## pull from the docker hub
